@@ -7,6 +7,10 @@
 :root{
    --main-color: #7bdcb5;
    --navbar-background: #2b2b2b;
+   --secondary-color: #5ba199;
+   --big-font: 4.3rem;
+   --h2-font: 2.3rem;
+   --p-font: 1rem;
 }
 *{
    margin: 0;
@@ -122,4 +126,94 @@ header .logo{
    height: 32px;
    width: 32px;
    text-align: center;
+}
+.quienes-somos{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--secondary-color);
+   overflow: hidden;
+   padding: 0 8%;
+}
+.quienes-somos-text{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.quienes-somos-text h2{
+   font-size: 2rem;
+}
+.quienes-somos-text p{
+   font-size: 1.2rem;
+   text-align: center;
+   width: 90%;
+   margin: 20px 0;
+}
+.quienes-somos-text .btn{
+   height: 100%;
+   width: 130px;
+   text-align: center;
+   background-color: var(--navbar-background);
+   border-radius: 10px;
+   font-size: 1.1rem;
+   padding: 5px;
+   color: #fff;
+   transition: all .38s ease;
+}
+.btn:hover{
+   color: #999;
+   transform: scale(1.1);
+}
+.quienes-somos-img img{
+   height: 100%;
+   max-height: 600px;
+   width: auto;
+}
+.servicios{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+   gap: 1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+   background-color: var(--navbar-background);
+   padding: 2% 8%;
+   overflow: hidden;
+   color: #fff;
+}
+.row{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+.img-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--main-color);
+   height: 120px;
+   width: 120px;
+   border-radius: 50%;
+}
+.img-container img{
+   height: 80px;
+   width: auto;
+}
+.servicios-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 270px;
+}
+.servicios-text h2{
+   font-size: 1.6rem;
+   padding: 10px 0;
+}
+.servicios-text p{
+   font-size: 1rem;
 }
