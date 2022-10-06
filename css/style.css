@@ -148,7 +148,7 @@ header .logo{
 .quienes-somos-text p{
    font-size: 1.2rem;
    text-align: center;
-   width: 90%;
+   width: 85%;
    margin: 20px 0;
 }
 .quienes-somos-text .btn{
@@ -196,12 +196,12 @@ header .logo{
    justify-content: center;
    align-items: center;
    background-color: var(--main-color);
-   height: 120px;
-   width: 120px;
+   height: 110px;
+   width: 110px;
    border-radius: 50%;
 }
 .img-container img{
-   height: 80px;
+   height: 70px;
    width: auto;
 }
 .servicios-text{
@@ -211,9 +211,33 @@ header .logo{
    width: 270px;
 }
 .servicios-text h2{
-   font-size: 1.6rem;
+   font-size: 1.5rem;
    padding: 10px 0;
 }
 .servicios-text p{
+   font-size: .9rem;
+}
+footer{
+   background-color: var(--navbar-background);
+   width: 100%;
+   padding: 2% 8%;
    font-size: 1rem;
+   color: #fff;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+.footer-content h3{
+   font-size: 1.4rem;
+   padding-bottom: 1.5rem;
+}
+.footer-content li{
+   padding: 5px 0;
+   transition: all .38s ease;
+}
+.footer-content li a{
+   color: #fff;
+   transition: all .38s ease;
+}
+.footer-content li:hover, .footer-content li a:hover{
+   color: #999;
 }
