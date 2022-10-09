@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+/*
+   font-family: 'Encode Sans', sans-serif;
+   font-family: 'Oswald', sans-serif;
+   font-family: 'Space Grotesk', sans-serif;
+*/
+:root{
+   --main-color: #7bdcb5;
+   --navbar-background: #2b2b2b;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+   font-family: 'Encode Sans', sans-serif;
+}
+header{
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100px;
+   background-color: var(--main-color);
+   display: flex;
+   justify-content: space-between;
+   padding: 0 8%;
+}
+header .logo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 45px;
+   font-weight: 600;
+   color: #000;
+}
+.search-form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.main-form{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   border-radius: 10px;
+}
+.main-form input{
+   width: 300px;
+   height: 45px;
+   border-radius: 10px 0 0 10px;
+   padding-left: 10px;
+   font-size: 18px;
+   outline: none;
+   border: none;
+}
+.main-form button {
+   width: 25px;
+   height: 45px;
+   border-radius: 0 10px 10px 0;
+   border: none;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #fff;
+   font-size: 20px;
+   font-weight: 500;
+}
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 50px;
+   width: 100%;
+   background-color: var(--navbar-background);
+   padding: 0 8%;
+}
+.navbar .navbar-left ul li{
+   display: inline-block;
+}
+.navbar .navbar-left ul li a{
+   color: #fff;
+   padding: 0 12px;
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 400;
+   transition: all .38s ease;
+}
+.navbar .navbar-left ul li a:hover{
+   color: #999;
+}
+.navbar .navbar-right{
+   display: flex;
+   align-items: center;
+}
+.navbar .navbar-right ul{
+   display: flex;
+   flex-direction: row;
+}
+.navbar .navbar-right ul li{
+   display: flex;
+   padding: 0 5px;
+}
+.navbar .navbar-right .circle-icon{
+   display: table;
+   height: 32px;
+   width: 32px;
+   border-radius: 50%;
+   font-size: 20px;
+   color: #2b2b2b;
+   background-color: #fff;
+   cursor: pointer;
+   transition: all .38s ease;
+}
+.circle-icon:hover{
+   transform: scale(1.2);
+}
+.navbar .navbar-right .circle-icon span{
+   display: table-cell;
+   vertical-align: middle;
+   height: 32px;
+   width: 32px;
+   text-align: center;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-template-rows: 550px 550px;
+   gap: 10px;
+   background-color:#fff;
+   padding: 60px;
+ }
+ 
+ .grid-container > div {
+      border: 1px solid #E5E8EB;      
+      letter-spacing: .075em;
+      margin-top: -1px;
+      padding: 2.30769231em;
+      text-align: center; 
+      
+}
+
+.imagen_noticia{
+   margin: 5px;
+   border: 1px solid #ccc;
+   float: left;
+   width: 100%
+    
+}
+   
+h4 {
+   color: #4CAF50;
+   text-decoration: none;
+   padding: 15px;
+   text-align: center;
+}
+
+.div > p {
+  padding: 30px;
+  margin: 20px auto auto;
+  text-align: center;
+  font-size: 0.3em;
+  overflow: hidden;
+}
+
+.button {
+   background-color: #4CAF50;
+   border-color: #4CAF50;
+   color: #4CAF50;
+   padding: 30px;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 8px;
+   transition: all 0.5s;
+
+}
+.button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+}
+
+.button span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -10px;
+   transition: 0.5s;
+ }
+
+.button:hover span {
+   padding-right: 25px;
+ }
+ 
+ .button:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
+ .grid-pagination {
+   display:grid;
+   grid-template-columns: auto;
+   grid-template-rows: auto;
+   gap: 10px;
+   background-color:#fff;
+   padding: 60px;
+   align-content: center;
+   justify-content: center;
+ }
+
+ .pagination {
+   display: inline-block;
+ }
+ 
+ .pagination a {
+   color: black;
+   float: left;
+   padding: 8px 16px;
+   text-decoration: none;
+ }
+ 
+ .pagination a.active {
+   background-color: #4CAF50;
+   color: white;
+   border-radius: 5px;
+ }
+ 
+ .pagination a:hover:not(.active) {
+   background-color: #ddd;
+   border-radius: 5px;
+ }
