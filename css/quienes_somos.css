@@ -123,3 +123,83 @@ header .logo{
    width: 32px;
    text-align: center;
 }
+
+
+.grid-titulo{
+   display: flex;
+   grid-template-columns: auto;
+   grid-template-rows: auto;
+   gap: 30px;
+   background-color:rgba(234, 238, 238, 0.8);
+   padding: 30px;
+   padding-left: 100px;
+   align-content: center;
+   justify-content:left;
+   color:#7bdcb5;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   border: 2px rgba(248, 250, 247, 0.422)
+}
+
+.grid-item{
+   display:grid;
+   grid-template-rows: 550px 550px;
+   gap: 10px;
+   background-color:#fff;
+   padding: 20px;  
+}
+
+.grid-container {
+   display:grid;
+   grid-template-rows: 400px 400px;
+   gap: 60px;
+   background-color:#fff;
+   padding:auto;
+   padding-left: 100px;
+   padding-right: 100px;
+ }
+
+ .grid-container > div {
+   letter-spacing: .075em;
+   margin-top: -1px;
+   padding: 3em;
+   text-align: center;
+ }
+  
+   video {
+      width: 70%;
+      height:fit-content;
+      border: 2px solid #ccc
+   }
+
+ .imagen_mision{
+  display: block;
+  margin: auto;
+  padding: 50px 50px 20px; 
+  border: 1px;
+  float: none;
+  width:100%;
+  height:100%;
+   
+}
+
+.imagen_vision{
+   display: block;
+  margin: auto;
+  padding: 50px 50px 20px; 
+  border: 1px;
+  float: none;
+   width:80%;
+   height:70%;
+   
+}
+
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+   color:#7bdcb5;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   border: 2px rgba(248, 250, 247, 0.422)
+   
+}
