@@ -272,6 +272,49 @@ header .logo{
    font-size: .9rem;
 }
 
+/* PROFESIONALES SECTION */
+.profesionales{
+   background-image: url(/media/profesionales-bg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: right;
+   height: 500px;
+   width: 100%;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   padding: 0 8%;
+}
+.profesionales-text{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   text-align: right;
+   width: 40%;
+}
+.profesionales-text h2{
+   font-size: 1.8rem;
+}
+.profesionales-text p{
+   font-size: 1.1rem;
+   margin: 20px 0;
+}
+.profesionales-text .btn{
+   height: 100%;
+   width: 130px;
+   text-align: center;
+   background-color: #778bfc;
+   border-radius: 10px;
+   font-size: 1rem;
+   padding: 5px;
+   color: #000;
+   transition: all .38s;
+}
+.profesionales-text .btn:hover{
+   letter-spacing: 2px;
+   transform: scale(1);
+}
+
 /* FOOTER */
 footer{
    background-color: var(--navbar-background);
@@ -475,7 +518,7 @@ footer{
       font-weight: 500;
    }
 }
-@media (max-width: 600px) {
+@media (max-width: 630px) {
    header{
       height: 80px;
    }

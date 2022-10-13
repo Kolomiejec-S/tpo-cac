@@ -81,7 +81,7 @@ header .logo{
 }
 .navbar .navbar-left ul li a{
    color: #fff;
-   padding: 0 12px;
+   padding-right: 12px;
    text-transform: uppercase;
    font-size: 14px;
    font-weight: 400;
@@ -124,82 +124,184 @@ header .logo{
    text-align: center;
 }
 
-
 .grid-titulo{
    display: flex;
-   grid-template-columns: auto;
-   grid-template-rows: auto;
-   gap: 30px;
-   background-color:rgba(234, 238, 238, 0.8);
-   padding: 30px;
-   padding-left: 100px;
-   align-content: center;
-   justify-content:left;
+   background-color:#eee;
+   padding: 30px 8%;
    color:#7bdcb5;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   border: 2px rgba(248, 250, 247, 0.422)
+   border: 2px #eee;
 }
-
-.grid-item{
-   display:grid;
-   grid-template-rows: 550px 550px;
-   gap: 10px;
-   background-color:#fff;
-   padding: 20px;  
+.grid-titulo h1{
+   font-size: 24px;
 }
-
+.video{
+   display: flex;
+   justify-content: center;
+   padding: 30px 0;
+}
 .grid-container {
-   display:grid;
-   grid-template-rows: 400px 400px;
-   gap: 60px;
+   display: flex;
+   flex-direction: column;
    background-color:#fff;
-   padding:auto;
-   padding-left: 100px;
-   padding-right: 100px;
- }
+   padding: 0px 8%;
+}
 
- .grid-container > div {
+.grid-container > div {
    letter-spacing: .075em;
    margin-top: -1px;
    padding: 3em;
    text-align: center;
- }
+}
   
-   video {
-      width: 70%;
-      height:fit-content;
-      border: 2px solid #ccc
-   }
-
- .imagen_mision{
-  display: block;
-  margin: auto;
-  padding: 50px 50px 20px; 
-  border: 1px;
-  float: none;
-  width:100%;
-  height:100%;
-   
+video {
+   width: 60%;
+   border: 2px solid #ccc;
 }
 
-.imagen_vision{
-   display: block;
-  margin: auto;
-  padding: 50px 50px 20px; 
-  border: 1px;
-  float: none;
-   width:80%;
-   height:70%;
-   
+.imagen{
+   width: 100%;
+   max-width: 760px;
+   height: auto;
+   border-radius: 10px;
+   border: 2px solid #eee;
 }
-
-
 h2 {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
+   display: flex;
+   justify-content: center;
+   padding: 10px 8%;
    color:#7bdcb5;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   border: 2px rgba(248, 250, 247, 0.422)
-   
+   border: 2px #ccc;
+}
+.grid-container p{
+   padding: 10px 8%;
+}
+footer{
+   background-color: var(--navbar-background);
+   width: 100%;
+   padding: 2% 8%;
+   color: #fff;
+   font-size: 1rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+.footer-content h3{
+   font-size: 1.4rem;
+   padding-bottom: 1.5rem;
+}
+.footer-content li{
+   padding: 5px 0;
+   transition: all .38s ease;
+}
+.footer-content li a{
+   color: #fff;
+   transition: all .38s ease;
+}
+.footer-content li:hover, .footer-content li a:hover{
+   color: #999;
+}
+
+/* MEDIA QUERIES */
+.checkbtn{
+   font-size: 30px;
+   color: #fff;
+   cursor: pointer;
+   display: none;
+}
+@media (max-width: 1190px) {
+   footer{
+      font-size: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+      padding: 2% 6%;
+   }
+}
+@media (max-width: 1130px){
+   header, .navbar{
+      padding: 0 6%;
+      transition: .2s;
+   }
+   footer{
+      padding: 2% 6%;
+   }
+}
+@media (max-width: 910px){
+   header .logo{
+      font-size: 40px;
+      transition: .2s;
+   }
+   .main-form input{
+      width: 250px;
+      font-size: 16px;
+      transition: .2s;
+   }
+   .main-form button {
+      font-size: 18px;
+      transition: .2s;
+   }
+   .checkbtn{
+      display: block;
+      z-index: 2;
+      transition: .2s;
+   }
+   .navbar .navbar-left ul{
+      position: absolute;
+      width: 100%;
+      top: 100px;
+      background-color: var(--navbar-background);
+      text-align: center;
+      transition: .3s;
+      left: -100%;
+   }
+   .navbar .navbar-left.active ul{
+      left: 0;
+      transition: .3s;
+    }
+   .navbar .navbar-left ul li{
+      display: block;
+      margin: 50px 0;
+      font-size: 18px;
+   }
+   footer{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+      overflow: hidden;
+   }
+   .footer-content h3{
+      font-size: 1.3rem;
+      padding-bottom: .8rem;
+      transition: .2s;
+   }
+}
+@media (max-width: 630px) {
+   header{
+      height: 80px;
+   }
+   header .logo{
+      font-size: 35px;
+   }
+   .main-form input{
+      width: 150px;
+      height: 40px;
+      font-size: 14px;
+      transition: .2s;
+   }
+   .main-form button {
+      height: 40px;
+      font-size: 16px;
+      transition: .2s;
+   }
+   .navbar .navbar-left ul{
+      top: 80px;
+      transition: .2s;
+   }
+   footer{
+      padding: 2% 6%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+   }
+   .footer-content h3{
+      font-size: 1.2rem;
+      padding: .7rem 0;
+   }
 }

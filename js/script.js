@@ -6,7 +6,7 @@ checkbtn.onclick = function() {
 }
 
 // CARROUSEL FUNCTION
-const slider = document.querySelector(".slider");
+/* const slider = document.querySelector(".slider");
 let sliderSection = document.querySelectorAll(".carrousel-content");
 let sliderSectionLast = sliderSection[sliderSection.length - 1];
 
@@ -43,4 +43,4 @@ btnRight.addEventListener("click", function(){
 })
 btnLeft.addEventListener("click", function(){
     Prev();
-})
+}) */
