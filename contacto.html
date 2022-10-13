@@ -5,7 +5,6 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://kit.fontawesome.com/28f03e650e.js" crossorigin="anonymous"></script>
-   <script src="js/script.js"></script>
    <link rel="stylesheet" href="css/contacto.css">
    <title>Document</title>
 </head>
@@ -22,6 +21,7 @@
       </div>
    </header>
    <div class="navbar">
+      <div class="checkbtn"><i class="fas fa-bars"></i></div>
       <div class="navbar-left">
          <ul>
             <li><a href="index.html">Inicio <i class="fa-solid fa-house"></i></a></li>
@@ -51,6 +51,94 @@
          </ul>
       </div>
    </div>
-   
+    <section class="grid-titulo-pagina">
+        <div>
+           <h1>Dejanos tu Consulta</h1>
+        </div>
+   </section>
+   <section class="grid-contacto">
+   <div class="container">
+    <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Apellidos</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Nombres</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="nombre" name="nombres" placeholder="Nombres..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Ciudad</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="Posadas">Posadas</option>
+          <option value="Santiago">Santiago Capital</option>
+          <option value="sanjuan">San Juan</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="email">Correo Electronico</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="mail" name="email" placeholder="Email..">
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Mensaje</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Escribe tu comentario.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="submit" value="Enviar">
+    </div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer" id="footer">
+  <div class="footer-content">
+     <h3><i class="fa-solid fa-star-of-life"></i> Salud</h3>
+     <ul>
+        <li><i class="fa-solid fa-phone"></i> (011) 1234-5678</li>
+        <li><i class="fa-solid fa-envelope"></i> info@tpocac.com</li>
+        <li><i class="fa-solid fa-location-dot"></i> Av. Argentina 1234</li>
+     </ul>
+  </div>
+  <div class="footer-content">
+     <h3>Enlaces</h3>
+     <ul>
+        <li><a href="quienes_somos.html">Nuestra visión</a></li>
+        <li><a href="profesionales.html">Nuestros médicos</a></li>
+        <li><a href="novedades.html">Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+     </ul>
+  </div>
+  <div class="footer-content">
+     <h3>Redes Sociales</h3>
+     <ul>
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+     </ul>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14172.926099411561!2d-55.8898423!3d-27.3684839!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0dbadf5571eb1b!2sSanatorio%20Nosiglia!5e0!3m2!1ses-419!2sar!4v1664985043453!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>

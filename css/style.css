@@ -352,8 +352,7 @@ footer{
       padding-left: 6%;
    }
 }
-
-@media (max-width: 896px){
+@media (max-width: 910px){
    header .logo{
       font-size: 40px;
       transition: .2s;
@@ -421,6 +420,16 @@ footer{
       width: 200px;
       transition: .2s;
    }
+   footer{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+      overflow: hidden;
+   }
+   .footer-content h3{
+      font-size: 1.3rem;
+      padding-bottom: .8rem;
+      transition: .2s;
+   }
 }
 @media (max-width: 767px) { 
    .quienes-somos-text h2{
@@ -466,7 +475,7 @@ footer{
       font-weight: 500;
    }
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
    header{
       height: 80px;
    }
@@ -533,5 +542,15 @@ footer{
    .servicios-text p{
       font-size: 1rem;
       font-weight: 400;
+   }
+   footer{
+      padding: 2% 6%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+   }
+   .footer-content h3{
+      font-size: 1.2rem;
+      padding: .7rem 0;
    }
 }
