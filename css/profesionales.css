@@ -123,3 +123,135 @@ header .logo{
    width: 32px;
    text-align: center;
 }
+
+.row{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+h4 {
+   display:flex;
+   justify-content: center;
+   padding: 20px;
+    color:#7bdcb5;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px rgba(248, 250, 247, 0.422);
+    
+   
+ }
+.grid-titulo{
+   display: flex;
+   grid-template-columns: auto;
+   grid-template-rows: auto;
+   gap: 30px;
+   background-color:rgba(234, 238, 238, 0.8);
+   padding: 30px;
+   padding-left: 100px;
+   align-content: center;
+   justify-content:left;
+   color:#7bdcb5;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   border: 2px rgba(248, 250, 247, 0.422)
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-template-rows: 550px 550px;
+   gap: 20px;
+   background-color:rgba(255, 255, 255, 255);
+   padding-left: 100px;
+   padding-right: 100px;
+   padding: auto;
+   border-style:#999 solid
+ }
+
+ .grid-container > div {
+   letter-spacing: .075em;
+   margin-top: -1px;
+   padding: 2em;
+   text-align: center;
+ }
+ 
+ .div > p {
+   padding: 30px;
+   margin: 20px auto auto;
+   text-align: center;
+   font-size: 0.7em;
+   overflow:hidden;
+ }
+ 
+ 
+
+ .button {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: #4CAF50;
+    padding: 30px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.5s;
+ 
+ }
+ .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+ }
+ 
+ .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+ 
+ .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  footer{
+   background-color: var(--navbar-background);
+   width: 100%;
+   padding: 2% 8%;
+   font-size: 1rem;
+   color: #fff;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+.footer-content h3{
+   font-size: 1.4rem;
+   padding-bottom: 1.5rem;
+}
+.footer-content li{
+   padding: 5px 0;
+   transition: all .38s ease;
+}
+.footer-content li a{
+   color: #fff;
+   transition: all .38s ease;
+}
+.footer-content li:hover, .footer-content li a:hover{
+   color: #999;
+}
