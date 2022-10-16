@@ -123,7 +123,6 @@ header .logo{
    width: 32px;
    text-align: center;
 }
-
 .grid-titulo-pagina{
    display: flex;
    background-color: #eee;
@@ -133,7 +132,6 @@ header .logo{
    color: #7bdcb5;
    border: 2px rgba(248, 250, 247, 0.422)
 }
-
 .grid-container {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -141,19 +139,17 @@ header .logo{
    background-color:#fff;
    padding: 0 8%;
 }
- 
 .grid-container > div {
    letter-spacing: .05em;
    padding: 2em;
    text-align: center;   
 }
-
 .imagen_noticia{
    margin: 5px;
    border: 1px solid #ccc;
-   width: 100%
+   width: 100%;
+   height: auto;
 }
-   
 h4 {
    color: #4CAF50;
    text-decoration: none;
@@ -161,13 +157,11 @@ h4 {
    text-align: center;
    border-bottom:solid #eee;
 }
-
 .texto-noticias p {
    text-align: center;
    font-size: .95em;
    width: 100%;
 }
-
 .button {
    background-color: #4CAF50;
    border: none;
@@ -187,7 +181,6 @@ h4 {
    position: relative;
    transition: all 0.5s ease;
 }
-
 .button span:after {
    content: '\00bb';
    position: absolute;
@@ -196,17 +189,14 @@ h4 {
    right: -10px;
    transition: 0.5s ease;
 }
-
 .button:hover span {
    padding-right: 20px;
 }
- 
 .button:hover span:after {
    opacity: 1;
    right: 0;
 }
-
- .grid-pagination {
+.grid-pagination {
    display:grid;
    grid-template-columns: auto;
    grid-template-rows: auto;
@@ -215,31 +205,26 @@ h4 {
    padding: 60px;
    align-content: center;
    justify-content: center;
- }
-
- .pagination {
+}
+.pagination {
    display: inline-block;
- }
- 
- .pagination a {
+}
+.pagination a {
    color: black;
    float: left;
    padding: 8px 16px;
    text-decoration: none;
    cursor: pointer;
- }
- 
- .pagination a.active {
+}
+.pagination a.active {
    background-color: #4CAF50;
    color: white;
    border-radius: 5px;
- }
- 
- .pagination a:hover:not(.active) {
+}
+.pagination a:hover:not(.active) {
    background-color: #ddd;
    border-radius: 5px;
- }
-
+}
  footer{
    background-color: var(--navbar-background);
    width: 100%;

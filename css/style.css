@@ -277,7 +277,7 @@ header .logo{
    background-image: url(/media/profesionales-bg.jpg);
    background-size: cover;
    background-repeat: no-repeat;
-   background-position: right;
+   background-position: center;
    height: 500px;
    width: 100%;
    display: flex;
@@ -313,6 +313,56 @@ header .logo{
 .profesionales-text .btn:hover{
    letter-spacing: 2px;
    transform: scale(1);
+}
+
+/* NOVEDADES SECTION */
+.novedades{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 15px;
+   padding: 2% 8%;
+}
+.noticia-container{
+   position: relative;
+}
+.noticia-img{
+   display: block;
+   width: 100%;
+   height: auto;
+}
+.noticia-head{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: var(--main-color);
+   overflow: hidden;
+   width: 100%;
+   height: 0;
+   transition: all .38s ease;
+}
+.noticia-container:hover .noticia-head{
+   height: 100%;
+}
+.noticia-text a{
+   white-space: nowrap;
+   color: #000;
+   font-size: 1.4rem;
+   position: absolute;
+   overflow: hidden;
+   bottom: 10%;
+   left: 0%;
+   padding: 2%;
+}
+#noticia-1{
+   grid-area: 1/1/3/2;
+}
+#noticia-2{
+   grid-area: 1/2/2/3;
+}
+#noticia-3{
+   grid-area: 2/2/3/3;
 }
 
 /* FOOTER */
@@ -385,8 +435,22 @@ footer{
       max-height: 500px;
       width: auto;
    }
+   .profesionales{
+      background-image: url(/media/profesionales-bg.jpg);
+      background-size: cover;
+      padding: 0 6%;
+      overflow: hidden;
+   }
+   .profesionales-text h2{
+      font-size: 1.6rem;
+   }
+   .profesionales-text .btn{
+      width: 110px;
+      font-size: 1rem;
+   }
    footer{
       padding: 2% 6%;
+      overflow: hidden;
    }
 }
 @media (max-width: 1024px){
@@ -462,6 +526,20 @@ footer{
    .servicios-text{
       width: 200px;
       transition: .2s;
+   }
+   .profesionales{
+      height: 400px;
+   }
+   .profesionales-text h2{
+      font-size: 1.5rem;
+   }
+   .profesionales-text p{
+      font-size: 1rem;
+      transition: .2s;
+   }
+   .profesionales-text .btn{
+      width: 100px;
+      font-size: 1rem;
    }
    footer{
       display: grid;
@@ -585,6 +663,21 @@ footer{
    .servicios-text p{
       font-size: 1rem;
       font-weight: 400;
+   }
+   .profesionales{
+      background-position: -40px ;
+   }
+   .profesionales-text h2{
+      font-size: 1.2rem;
+   }
+   .profesionales-text p{
+      font-size: .9rem;
+      width: 80%;
+   }
+   .profesionales-text .btn{
+      width: 80px;
+      font-size: .85rem;
+      transition: .2s;
    }
    footer{
       padding: 2% 6%;
