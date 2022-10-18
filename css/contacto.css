@@ -145,7 +145,6 @@ input[type=text], select, textarea, input[type=email] {
    border-color: #ccc;
    border-radius: 4px;
    resize: vertical;
-   transition: all .38s ease;
 }
 
 label {
