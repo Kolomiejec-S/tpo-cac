@@ -134,24 +134,26 @@ header .logo{
 
 .grid-contacto {
    display: grid;
-   background-color:transparent;
+   background-color: transparent;
    padding: 20px 8%;
 }
 
-input[type=text], select, textarea {
+input[type=text], select, textarea, input[type=email] {
    width: 100%;
    padding: 12px;
-   border: 1px solid #ccc;
+   border: 1px solid;
+   border-color: #ccc;
    border-radius: 4px;
    resize: vertical;
+   transition: all .38s ease;
 }
-  
+
 label {
    padding: 12px 12px 12px 0;
    display: inline-block;
 }
   
-input[type=submit] {
+#enviar{
    background-color: #04AA6D;
    color: white;
    padding: 12px 20px;
@@ -159,10 +161,11 @@ input[type=submit] {
    border-radius: 4px;
    cursor: pointer;
    float: right;
+   transition: all .38s ease;
 }
   
-input[type=submit]:hover {
-   background-color: #45a049;
+#enviar:hover {
+   background-color: #0f5132;
 }
   
 .container {
@@ -182,7 +185,42 @@ input[type=submit]:hover {
    width: 75%;
    margin-top: 6px;
 }
-  
+.is-valid{
+   border-color:#198754;
+   padding-right:calc(1.5em + .75rem);
+   background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+   background-repeat:no-repeat;
+   background-position:right calc(.375em + .1875rem) center;
+   background-size:calc(.75em + .375rem) calc(.75em + .375rem);
+}
+.is-invalid{
+   border-color:#dc3545;
+   padding-right:calc(1.5em + .75rem);
+   background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+   background-repeat:no-repeat;
+   background-position:right calc(.375em + .1875rem) center;
+   background-size:calc(.75em + .375rem) calc(.75em + .375rem);
+}
+.text-danger{
+   opacity:1;
+   color: #dc3545 !important;
+}
+.d-none{
+   display: none!important;
+}
+.alert{
+   background: transparent;
+   padding: 1rem;
+   margin: 1rem 0;
+   border-radius:0.375rem;
+   position:relative;
+}
+.alert-success{
+   color:#0f5132;
+   background-color:#d1e7dd;
+   border: 2px solid #badbcc;
+}
+
 /* Clear floats after the columns */
 .row:after {
    content: "";
