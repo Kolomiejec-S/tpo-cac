@@ -1,172 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://kit.fontawesome.com/28f03e650e.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="css/contacto.css">
-   <title>Document</title>
-</head>
-<body>
-   <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/28f03e650e.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contacto.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
       <div class="logo">
-         <a href="#" class="logo"><i class="fa-solid fa-star-of-life"></i> Salud</a>
+        <a href="#" class="logo"
+          ><i class="fa-solid fa-star-of-life"></i> Salud</a
+        >
       </div>
       <div class="search-form">
-         <form class="main-form" id="form" role="search" action="">
-            <input class="search-input" id="search-input" type="search" placeholder="Search" maxlength="255">
-            <button id="submit" class="btn btn-search-submit" type="submit" name="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-         </form>
+        <form class="main-form" id="form" role="search" action="">
+          <input
+            class="search-input"
+            id="search-input"
+            type="search"
+            placeholder="Search"
+            maxlength="255" />
+          <button
+            id="submit"
+            class="btn btn-search-submit"
+            type="submit"
+            name="Buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
       </div>
-   </header>
-   <div class="navbar">
+    </header>
+    <div class="navbar">
       <div class="checkbtn"><i class="fas fa-bars"></i></div>
       <div class="navbar-left">
-         <ul>
-            <li><a href="index.html">Inicio <i class="fa-solid fa-house"></i></a></li>
-            <li><a href="quienes_somos.html">Quienes Somos <i class="fa-solid fa-house-medical"></i></i></a></li>
-            <li><a href="profesionales.html">Profesionales <i class="fa-solid fa-user-doctor"></i></a></li>
-            <li><a href="novedades.html">Novedades <i class="fa-solid fa-newspaper"></i></a></li>
-            <li><a href="contacto.html">Contacto <i class="fa-solid fa-envelope"></i></a></li>
-         </ul>
+        <ul>
+          <li>
+            <a href="index.html">Inicio <i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="quienes_somos.html"
+              >Quienes Somos <i class="fa-solid fa-house-medical"></i
+            ></a>
+          </li>
+          <li>
+            <a href="profesionales.html"
+              >Profesionales <i class="fa-solid fa-user-doctor"></i
+            ></a>
+          </li>
+          <li>
+            <a href="novedades.html"
+              >Novedades <i class="fa-solid fa-newspaper"></i
+            ></a>
+          </li>
+          <li>
+            <a href="contacto.html"
+              >Contacto <i class="fa-solid fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
       </div>
       <div class="navbar-right">
-         <ul>
-            <li>
-               <a href="#"><p class="circle-icon">
-                  <span><i class="fa-brands fa-facebook-f"></i></span></p>
-               </a>
-            </li>
-            <li>
-               <a href="#"><p class="circle-icon">
-                  <span><i class="fa-brands fa-twitter"></i></span></p>
-               </a>
-            </li>
-            <li>
-               <a href="#"><p class="circle-icon">
-                  <span><i class="fa-brands fa-instagram"></i></span></p>
-               </a>
-            </li>
-         </ul>
+        <ul>
+          <li>
+            <a href="#"
+              ><p class="circle-icon">
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><p class="circle-icon">
+                <span><i class="fa-brands fa-twitter"></i></span>
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><p class="circle-icon">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </p>
+            </a>
+          </li>
+        </ul>
       </div>
-   </div>
+    </div>
 
-   <section class="grid-titulo-pagina">
-        <div>
-           <h1>Dejanos tu Consulta</h1>
-        </div>
-   </section>
-   <section class="grid-contacto">
-   <div class="container">
-   <form id="formulario">
-      <div class="row">
-         <div class="col-25">
-            <label for="nombre">Nombre</label>
-         </div>
-         <div class="col-75">
-            <input type="text" id="userNombre" name="userNombre" autocomplete="off" placeholder="Nombre" required value="Santiago">
-         </div>
-         <p class="text-danger d-none" id="alertNombre"></p>
+    <section class="grid-titulo-pagina">
+      <div>
+        <h1>Dejanos tu Consulta</h1>
       </div>
-      <div class="row">
-         <div class="col-25">
-            <label for="apellido">Apellido</label>
-         </div>
-         <div class="col-75">
-            <input type="text" id="userApellido" name="userApellido" autocomplete="off" placeholder="Apellido" required value="Kolomiejec">
-         </div>
-         <p class="text-danger d-none" id="alertApellido"></p>
+    </section>
+    <section class="grid-contacto">
+      <div class="container">
+        <form id="formulario">
+          <div class="row">
+            <div class="col-25">
+              <label for="nombre">Nombre</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="userNombre"
+                name="userNombre"
+                autocomplete="off"
+                placeholder="Nombre"
+                required />
+            </div>
+            <p class="text-danger d-none" id="alertNombre"></p>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="apellido">Apellido</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="userApellido"
+                name="userApellido"
+                autocomplete="off"
+                placeholder="Apellido"
+                required />
+            </div>
+            <p class="text-danger d-none" id="alertApellido"></p>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="provincia">Provincia</label>
+            </div>
+            <div class="col-75">
+              <select id="userProvincia" name="userProvincia" required>
+                <option disabled selected>Selecciona tu provincia</option>
+                <option value="buenos_aires">Buenos Aires</option>
+                <option value="caba">Ciudad Autónoma de Buenos Aires</option>
+                <option value="catamarca">Catamarca</option>
+                <option value="chaco">Chaco</option>
+                <option value="chubut">Chubut</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="corrientes">Corrientes</option>
+                <option value="entre_rios">Entre Ríos</option>
+                <option value="formosa">Formosa</option>
+                <option value="jujuy">Jujuy</option>
+                <option value="la_pampa">La Pampa</option>
+                <option value="la_rioja">La Rioja</option>
+                <option value="mendoza">Mendoza</option>
+                <option value="misiones">Misiones</option>
+                <option value="neuquen">Neuquén</option>
+                <option value="rio_negro">Río Negro</option>
+                <option value="salta">Salta</option>
+                <option value="san_juan">San Juan</option>
+                <option value="san_luis">San Luis</option>
+                <option value="santa_cruz">Santa Cruz</option>
+                <option value="santa_fe">Santa Fe</option>
+                <option value="santiago_del_estero">Santiago del Estero</option>
+                <option value="tierra_del_fuego">
+                  Tierra del Fuego, Antártida e Islas del Atlántico Sur
+                </option>
+                <option value="tucuman">Tucumán</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Correo Electronico</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                autocomplete="off"
+                placeholder="Email"
+                required />
+            </div>
+            <p class="text-danger d-none" id="alertEmail"></p>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Mensaje</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="userSubject"
+                name="userSubject"
+                placeholder="Escribe tu consulta"
+                style="height: 200px"></textarea>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <button id="enviar" type="submit" value="enviar">Enviar</button>
+          </div>
+        </form>
+        <div class="alert alert-success d-none" id="alertSuccess"></div>
       </div>
-      <div class="row">
-         <div class="col-25">
-            <label for="provincia">Provincia</label>
-         </div>
-         <div class="col-75">
-            <select id="userProvincia" name="userProvincia" required>
-               <option disabled selected>Selecciona tu provincia</option>
-               <option value="buenos_aires">Buenos Aires</option>
-               <option value="caba">Ciudad Autónoma de Buenos Aires</option>
-               <option value="catamarca">Catamarca</option>
-               <option value="chaco">Chaco</option>
-               <option value="chubut">Chubut</option>
-               <option value="cordoba">Córdoba</option>
-               <option value="corrientes">Corrientes</option>
-               <option value="entre_rios">Entre Ríos</option>
-               <option value="formosa">Formosa</option>
-               <option value="jujuy">Jujuy</option>
-               <option value="la_pampa">La Pampa</option>
-               <option value="la_rioja">La Rioja</option>
-               <option value="mendoza">Mendoza</option>
-               <option value="misiones">Misiones</option>
-               <option value="neuquen">Neuquén</option>
-               <option value="rio_negro">Río Negro</option>
-               <option value="salta">Salta</option>
-               <option value="san_juan">San Juan</option>
-               <option value="san_luis">San Luis</option>
-               <option value="santa_cruz">Santa Cruz</option>
-               <option value="santa_fe">Santa Fe</option>
-               <option value="santiago_del_estero">Santiago del Estero</option>
-               <option value="tierra_del_fuego">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
-               <option value="tucuman">Tucumán</option>
-            </select>
-         </div>
-      </div>
-      <div class="row">
-         <div class="col-25">
-            <label for="email">Correo Electronico</label>
-         </div>
-         <div class="col-75">
-            <input type="email" id="userEmail" name="userEmail" autocomplete="off" placeholder="Email" required value="santiago@kmj.com">
-         </div>
-         <p class="text-danger d-none" id="alertEmail"></p>
-      </div>
-      <div class="row">
-         <div class="col-25">
-            <label for="subject">Mensaje</label>
-         </div>
-         <div class="col-75">
-            <textarea id="userSubject" name="userSubject" placeholder="Escribe tu consulta" style="height:200px"></textarea>
-         </div>
-      </div>
-      <br>
-      <div class="row">
-         <button id="enviar" type="submit" value="enviar">Enviar</button>
-      </div>
-   </form>
-   <div class="alert alert-success d-none" id="alertSuccess"></div>
-  </div>
-</section>
+    </section>
 
-<footer class="footer" id="footer">
-  <div class="footer-content">
-     <h3><i class="fa-solid fa-star-of-life"></i> Salud</h3>
-     <ul>
-        <li><i class="fa-solid fa-phone"></i> (011) 1234-5678</li>
-        <li><i class="fa-solid fa-envelope"></i> info@tpocac.com</li>
-        <li><i class="fa-solid fa-location-dot"></i> Av. Argentina 1234</li>
-     </ul>
-  </div>
-  <div class="footer-content">
-     <h3>Enlaces</h3>
-     <ul>
-        <li><a href="quienes_somos.html">Nuestra visión</a></li>
-        <li><a href="profesionales.html">Nuestros médicos</a></li>
-        <li><a href="novedades.html">Noticias</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-     </ul>
-  </div>
-  <div class="footer-content">
-     <h3>Redes Sociales</h3>
-     <ul>
-        <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
-        <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-     </ul>
-  </div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14172.926099411561!2d-55.8898423!3d-27.3684839!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0dbadf5571eb1b!2sSanatorio%20Nosiglia!5e0!3m2!1ses-419!2sar!4v1664985043453!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</footer>
-<script src="js/script.js"></script>
-<script src="js/contacto.js"></script>
-</body>
+    <footer class="footer" id="footer">
+      <div class="footer-content">
+        <h3><i class="fa-solid fa-star-of-life"></i> Salud</h3>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> (011) 1234-5678</li>
+          <li><i class="fa-solid fa-envelope"></i> info@tpocac.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> Av. Argentina 1234</li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="quienes_somos.html">Nuestra visión</a></li>
+          <li><a href="profesionales.html">Nuestros médicos</a></li>
+          <li><a href="novedades.html">Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14172.926099411561!2d-55.8898423!3d-27.3684839!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0dbadf5571eb1b!2sSanatorio%20Nosiglia!5e0!3m2!1ses-419!2sar!4v1664985043453!5m2!1ses-419!2sar"
+        width="300"
+        height="200"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/contacto.js"></script>
+  </body>
 </html>
